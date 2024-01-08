@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+</head>
+<body>
+    <h1>Nacionaliade</h1>
+    digite sua nacionalidade: <input type="text" name="txt1" id="txt1">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar(){
+            var nac = window.document.getElementById('txt1')
+            var tex = nac.value
+            var res = window.document.getElementById('res')
+            res.innerHTML = 'o senhor se origina do(a) ' + tex
+            if (tex == 'eua'){
+                res.innerHTML += 'o senhor deve ter muitas posses gringo'
+            } else{
+                res.innerHTML += '.<br/>tchau <strong>POBRE</strong>.<br/>'
+            res.innerHTML += 'tenha um Bom dia'
+            }
+        }
+
+    </script>
+</body>
+</html>

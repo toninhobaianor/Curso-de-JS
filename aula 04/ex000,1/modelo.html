@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de exercicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+       <h1>calculador de taxas</h1> 
+    </header>
+    <section>
+        <div>
+         valor: <input type="number" name="num" id="num">
+         <p><input type="radio" name="taxa" id="taxa" checked>
+         <label for="st">sem taxa</label>
+         <input type="radio" name="taxa" id="taxa1">
+         <label for="st">com taxa</label></p>
+         <p> dividido em quantas vezes: <input type="number" name="num1" id="divi"></p>
+         <p><input type="button" value="calcular" onclick="calcular()"></p>
+        </div>
+        <div>
+         <h1 id="restx">
+
+         </h1>
+         <p id="resnum">
+
+         </p>
+         <h1 id="restx1">
+
+         </h1>
+         <p id="resnum1">
+
+         </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; curso em video</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
